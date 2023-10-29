@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Clima</title>
+</head>
+<body>
+    <div id="boxPrincipal">
+        <h1>Confira o clima de sua cidade</h1>
+        <form id="boxInput">
+            <input type="text" id="input" placeholder="Informe sua Cidade" value="macaubas">
+            <button id="search">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </form>
+        <div id="conteinerDados">
+            <h2 id="cidade">
+                <span class="material-symbols-outlined">location_on</span>
+                <span id="dadoCidade"></span>
+            </h2>
+            <div id="boxInfo">
+                <div id="boxFiguras">
+                    <img id="iconTempo" src="https://openweathermap.org/img/wn/10d.png" alt="icon">
+                    <p id="fraseTempo">Chuvas forte</p>
+                </div>
+                <div id="infomaçoes">
+                    <h2 id="temperatura">
+                        <span id="dadoTemperatura">34</span>
+                        <span id="celsius">C°</span>
+                    </h2>
+                    <div id="infoMais2">
+                        <p id="humidade">
+                            <span class="material-symbols-outlined iconInfo">humidity_high</span>
+                            <span id="dadoHumidade">34%</span>
+                        </p>
+                        <p id="vento">
+                            <span class="material-symbols-outlined iconInfo">air</span>
+                            <span id="dadoVento">34km/h</span>
+                        </p>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

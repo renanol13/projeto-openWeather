@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    color: white;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(124, 124, 194, 0.532);
+}
+
+#boxPrincipal{
+    background-image: linear-gradient(180deg, rgb(27, 27, 222), rgb(125, 125, 207));
+    padding: .5em;
+    width: 340px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+#boxPrincipal > h1{
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 0.8em;
+}
+
+#boxInput{
+    display: flex;
+    width: 95%;
+    margin-bottom: 0.5em;
+    color: black
+}
+
+input{
+    width: 100%;
+    padding: 0.4em;
+    border-radius: 15px;
+    font-size: 1em;
+    border: none;
+    color: black
+    
+}
+
+button{
+    margin-left: 0.5em;
+    padding: 0.5em;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(113, 113, 187);
+    font-size: 0.5em;
+}
+#conteinerDados{
+    text-align: center;
+    transition: 0.5;
+    position: relative;
+}
+
+#boxInfo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1.5em;
+    margin-bottom: 30px;
+    height: 90%;
+}
+
+#cidade{
+    color: white;
+    margin:10px 0px 30px 0px;
+}
+
+#boxFiguras, #infomaçoes{
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    background-image: linear-gradient(135deg, rgb(136, 136, 221), rgb(212, 212, 236));
+    color: white;
+    text-align: center;
+}
+
+#infoMais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dadoTemperatura{
+   font-size: 3.5em;
+}
+
+#celsius{
+    font-size: 1.5em;
+}
+
+#infoMais2{
+    display: flex;
+    gap: 1em;
+}
+
+#humidade{
+    content: '';
+    border-right: 2px solid;
+    padding-right: 15px;
+}
+
+#humidade,#vento{
+    display: flex;
+    align-items: center;
+}
+
+.iconInfo{
+    margin-right: 5px;
+}
+
+
+#iconTempo{
+    width: 90px;
+}
