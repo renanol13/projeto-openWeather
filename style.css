@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -13,17 +14,19 @@ body, html{
     justify-content: center;
     align-items: center;
     background-color: rgba(124, 124, 194, 0.532);
+    background-image: linear-gradient(45deg, rgb(128, 128, 219), rgb(191, 191, 231));
 }
 
+
 #boxPrincipal{
-    background-image: linear-gradient(180deg, rgb(27, 27, 222), rgb(125, 125, 207));
+    background-image: linear-gradient(45deg, rgb(27, 27, 222), rgb(125, 125, 207));
     padding: .5em;
     width: 340px;
     border-radius: 20px;
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.351);
 }
 
 
@@ -48,8 +51,8 @@ input{
     border-radius: 15px;
     font-size: 1em;
     border: none;
-    color: black
-    
+    color: black;
+    outline: none;
 }
 
 button{
@@ -63,14 +66,14 @@ button{
 #conteinerDados{
     text-align: center;
     transition: 0.5;
-    position: relative;
+    display: none;
 }
 
 #boxInfo{
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 1.5em;
+    gap: 0.8em;
     margin-bottom: 30px;
     height: 90%;
 }
@@ -80,13 +83,14 @@ button{
     margin:10px 0px 30px 0px;
 }
 
+
 #boxFiguras, #infomaçoes{
     padding: 10px;
     background-color: white;
     border-radius: 15px;
-    background-image: linear-gradient(135deg, rgb(136, 136, 221), rgb(212, 212, 236));
+    background-image: linear-gradient(45deg, rgb(128, 128, 219), rgb(191, 191, 231));
     color: white;
-    text-align: center;
+    text-transform: capitalize;
 }
 
 #infoMais{
@@ -101,6 +105,10 @@ button{
 
 #celsius{
     font-size: 1.5em;
+}
+
+#iconTempo{
+    width: 90px;
 }
 
 #infoMais2{
@@ -124,6 +132,4 @@ button{
 }
 
 
-#iconTempo{
-    width: 90px;
-}
+
