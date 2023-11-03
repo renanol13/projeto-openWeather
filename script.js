@@ -1,5 +1,3 @@
-
-
 const search = document.querySelector('#search')
 const input = document.querySelector('#input')
 const iconTempo = document.querySelector('#iconTempo')
@@ -9,9 +7,11 @@ const dadoTemperatura = document.querySelector('#dadoTemperatura')
 const dadoHumidade = document.querySelector('#dadoHumidade')
 const dadoVento = document.querySelector('#dadoVento')
 const conteinerDados = document.querySelector('#conteinerDados')
+const iconLoad = document.querySelector('#iconLoad')
+
 
 const requisiçao = async () => {
-    
+    iconLoad.classList.remove('loading')
     const city = input.value
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=95de874bc19ecebb6a2441f0afdcacdd&lang=pt_br`
     try {
@@ -25,13 +25,13 @@ const requisiçao = async () => {
 
     } catch(error) {
         alert('Erro! Por favor, cheque os dados e tente novamente!')
-    }
+    } 
 }
 
 
 const construtor = async () => {
     const data = await requisiçao()
-
+    iconLoad.classList.add('loading')
     dadoCidade.innerHTML = data.name
     dadoTemperatura.innerHTML = parseInt(data.main.temp)
     dadoHumidade.innerHTML = data.main.humidity + '%'
@@ -41,11 +41,11 @@ const construtor = async () => {
     conteinerDados.style.display = 'block'
 }
 
-
-
 search.addEventListener('click', (e) => {
     e.preventDefault()
+    conteinerDados.style.display = 'none'
     construtor()
     input.value = ''
     input.focus()
 })
+
