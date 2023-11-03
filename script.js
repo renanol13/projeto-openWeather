@@ -46,6 +46,5 @@ search.addEventListener('click', (e) => {
     conteinerDados.style.display = 'none'
     construtor()
     input.value = ''
-    input.focus()
 })
 
